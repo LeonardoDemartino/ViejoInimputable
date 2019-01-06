@@ -37,7 +37,7 @@ class Brain{
 		public void Zapatear(Chorrito chorro) {
 		}
 
-		public int[] GetShoots() {
+		public int[] GetShots() {
 			int[] tiros = new int[10];
 			return tiros;
 		}
@@ -105,7 +105,7 @@ class Brain{
 			me.ShootEveryRound(chorro);
 			me.Zapatear(chorro);
 
-			if (me.GetShoots().Length == 1) {
+			if (me.GetShots().Length == 1) {
 				me.HabilTirador(true);
 
 				throw new GarronDeLaGranFlautaException();
